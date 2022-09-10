@@ -1,0 +1,179 @@
+---
+title: 後台管理 - Assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section class="assign">
+  <div class="assign__contianer container-full px-5">
+    <!-- header -->
+    <div class="assign__header row gx-0 py-5">
+      <div class="d-flex align-items-center col-12">
+        <div class="col-auto">
+          <h4 class="assign__title lh-sm">Assignment</h4>
+        </div>
+        <div class="course__select col-auto ms-50 me-auto">
+          <select class="select form-select ps-0 py-0 lh-sm border-0 fw-bold">
+            <option selected>All Courses</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <a class="assign__search me-4" href="#">
+          <span class="material-symbols-outlined icon--pill">search</span>
+        </a>
+        <a class="assign__point" href="#">
+          <span class="material-symbols-outlined icon--pill">notifications_active</span>
+        </a>
+      </div>
+    </div>
+    <!--assignment body -->
+    <div class="row gx-0">
+      <!-- list group -->
+      <div class="col-auto me-auto" style="width: 34.7827%;">
+        <div class="row gx-0">
+          <div class="col-auto">
+            <select class="assign__select form-select ps-0 py-0 lh-sm border-0 fw-bold">
+              <option selected>All (4)</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <ul class="list-group rounded-1">
+          <li class="list-group-item px-12 py-11">
+            <div class="item__top d-flex mb-1">
+              <p class="subtitle me-auto lh-sm fs-12">Chapter Assignment 2</p>
+              <p class="time lh-sm fs-12">4 hrs ago</p>
+            </div>
+            <div class="item__bottom d-flex">
+              <p class="title lh-sm fw-bold me-auto">Please check this file…</p>
+              <p class="name lh-sm text-gray">Emily Wang</p>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="item__top d-flex mb-1">
+              <p class="subtitle me-auto lh-sm fs-12">Chapter Assignment 1</p>
+              <p class="time lh-sm fs-12">12 hrs ago</p>
+            </div>
+            <div class="item__bottom d-flex">
+              <p class="title lh-sm fw-bold me-auto">My Homework</p>
+              <p class="name lh-sm text-gray">David Xu</p>
+            </div>
+          </li>
+          <li class="list-group-item"><div class="item__top d-flex mb-1">
+              <p class="subtitle me-auto lh-sm fs-12">Final Assignment</p>
+              <p class="time lh-sm fs-12">18 hrs ago</p>
+            </div>
+            <div class="item__bottom d-flex">
+              <p class="title lh-sm fw-bold me-auto">Have a problem with this…</p>
+              <p class="name lh-sm text-gray">Tony Wei</p>
+            </div></li>
+          <li class="list-group-item">
+            <div class="item__top d-flex mb-1">
+              <p class="subtitle me-auto lh-sm fs-12">Final Assignment</p>
+              <p class="time lh-sm fs-12">19 hrs ago</p>
+            </div>
+            <div class="item__bottom d-flex">
+              <p class="title lh-sm fw-bold me-auto">Did I do it right?</p>
+              <p class="name lh-sm text-gray">Christina Lin</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- assignment message -->
+      <div class="col-auto" style="width: 63.479%;">
+        <p class="comments text-end text-gray fs-12">2 comments</p>
+        <div class="assign__message border rounded-1" style="margin-bottom: 15px;">
+          <div class="assign__message__header d-flex align-items-end px-3 py-12">
+            <div class="header__content me-auto">
+              <p class="subtitle` lh-sm fs-12 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+              <p class="title lh-sm fw-bold">Please check this file for me, thanks!</p>
+            </div>
+            <a class="" href="#">
+              <span class="material-symbols-outlined">more_vert</span>
+            </a>
+          </div>
+          <div class="assign__message__body ps-3 pe-5 border-top">
+            <div class="assign__message__send">
+              <div class="sender d-flex pt-3 mb-3">
+                <div class="sender__img rounded-circle me-2"></div>
+                <div class="sender__info">
+                  <p class="name lh-sm fw-bold mb-1">Emily Wang</p>
+                  <p class="time lh-sm fs-12 text-gray">10:38 AM (4 hours ago)</p>
+                </div>
+              </div>
+              <div class="sender__content border-bottom ms-48">
+                <p class="fs-14 mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a <br>question: Why in the following code the height of the 
+                  <span class="text-success ff-secondary px-1 fs-14">div</span> 
+                  is bigger than the <br> height of the 
+                  <span class="text-success ff-secondary px-1 fs-14">img</span> 
+                  ? There is a gap below the image, but it doesn’t seems to be <br>a padding/margin.<br>What is the gap or extra space below image?</p>
+                <button class="btn border rounded fw-bold lh-1 bg-light" type="button" style="padding: 7px 16px; margin-bottom: 15px;">
+                  <span class="material-symbols-outlined icon-fill me-2">attach_file</span>
+                  HW-2-David.zip
+                </button>
+              </div>
+            </div>
+            <div class="assign__message__body__reply">
+              <div class="addressee d-flex pt-3 mb-3">
+                <div class="addressee__img rounded-circle me-2"></div>
+                <div class="addressee__info">
+                  <p class="name lh-sm fw-bold mb-1">Andy Chen (You)</p>
+                  <p class="time lh-sm fs-12 text-gray">13:24 AM (1 hours ago)</p>
+                </div>
+                <div class="addressee__function ms-auto mb-auto">
+                  <a class="function__marker me-4" href="#">
+                    <span class="material-symbols-outlined">grade</span>
+                  </a>
+                  <a class="function__edit" href="#">
+                    <span class="material-symbols-outlined">edit</span>
+                  </a>
+                </div>
+              </div>
+              <div class="addressee__content ms-48 mb-22">
+                <p class="fs-14" style="line-height: 21px;">
+                  Hi David, by default, an image is rendered inline, like a letter so it sits on the <br>
+                  same line that a, b, c and d sit on. There is space below that line for the <br>
+                  descenders you find on letters like g, j, p and q. <br>
+                  <br>
+                  You can: <br>
+                  <br>
+                </p>
+                <p style="text-indent: 16px; line-height: 21px;">
+                  • adjust the
+                  <span class="text-success fs-14 px-1" style="margin-left: -16px;">vertical-align</span> 
+                  of the image to position it elsewhere <br>
+                  (e.g. the <span class="text-success fs-14 px-1" style="margin-left: -16px;">middle</span> ) or
+                </p>
+                <p style="text-indent: 16px; line-height: 21px;">• change the
+                  <span class="text-success fs-14 px-1"  style="margin-left: -16px;">display</span>
+                  so it isn’t inline.
+                </p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="assign__operate d-flex align-items-center mb-5">
+          <div class="operate__page me-auto">
+            <a href="#" class="operate__page__previous me-4">
+              <span class="material-symbols-outlined">navigate_before</span>
+            </a>
+            <a href="#" class="operate__page__next">
+              <span class="material-symbols-outlined">navigate_next</span>
+            </a>
+          </div>
+          <div class="operate__btn">
+            <button class="btn btn-outline-success py-2 px-5 me-3" type="button">Mark as read</button>
+            <button class="btn btn-success py-2 px-5" type="button">Reply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="box"></div>

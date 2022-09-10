@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="body__container clearfix">
+    <aside class="aside d-flex flex-column py-5 ps-5 float-start fixed-top">
+      <h1 class="aside__logo">
+        <a href="" class="aside__logo__link">logo</a>
+      </h1>
+      <nav class="mb-auto">
+        <ul class="aside__list ps-0 mb-0">
+          <li class="aside__list__item">
+            <a class="item__link d-flex py-1 fw-bold" href="">
+              <span class="material-symbols-outlined icon--pill me-3">analytics</span>
+              Dashboard
+            </a>
+          </li>
+          <li class="aside__list__item">
+            <a class="item__link d-flex py-1 fw-bold" href="">
+              <span class="material-symbols-outlined icon--pill me-3">forum</span>
+              Question
+            </a>
+          </li>
+          <li class="aside__list__item">
+            <a class="item__link d-flex py-1 fw-bold" href="">
+              <span class="material-symbols-outlined icon--pill me-3">assignment</span>
+              Assignment
+            </a>
+          </li>
+          <li class="aside__list__item">
+            <a class="item__link d-flex py-1 fw-bold" href="">
+              <span class="material-symbols-outlined icon--pill me-3">video_library</span>
+              Course
+            </a>
+          </li>
+          <li class="aside__list__item">
+            <a class="item__link d-flex py-1 fw-bold" href="">
+              <span class="material-symbols-outlined icon--pill me-3">supervisor_account</span>
+              Admin
+            </a>
+          </li>
+          <li class="aside__list__item">
+            <a class="item__link d-flex py-1 fw-bold" href="">
+              <span class="material-symbols-outlined icon--pill me-3">settings</span>
+              Settings
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="aside__user d-flex">
+        <div class="aside__user__img rounded-circle me-3"></div>
+        <div class="aside__user__content">
+          <p class="name fw-bold mb-1">Andy Chen</p>
+          <p class="email fs-14 text-gray">andy0401@mail.com</p>
+        </div>
+      </div>
+    </aside>
+  
+    <main class="float-end">
+      <%- contents %>
+    </main>
+  </div>
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
